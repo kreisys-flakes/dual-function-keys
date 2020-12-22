@@ -1,0 +1,54 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1608399607,
+        "narHash": "sha256-2MbopEyEf/SSwbgHFez9ou461wMl7pvpPW9rHqwdG2w=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "cb312f3d03dbaf2d60e2fd3917ba2e5d41ffe631",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "src": "src",
+        "utils": "utils"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-2/WG/f9yTfJOD+J1m4+4YZBc8wbW50AlIfzRuTUo5Fk=",
+        "type": "tarball",
+        "url": "https://gitlab.com/interception/linux/plugins/dual-function-keys/-/archive/1.2.0/dual-function-keys-1.2.0.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://gitlab.com/interception/linux/plugins/dual-function-keys/-/archive/1.2.0/dual-function-keys-1.2.0.tar.gz"
+      }
+    },
+    "utils": {
+      "locked": {
+        "lastModified": 1608409263,
+        "narHash": "sha256-L7gMksy7VR+GcySJhBFnjzO+GsB/BZje+1hvglbhyZk=",
+        "owner": "kreisys",
+        "repo": "flake-utils",
+        "rev": "b83c460130ee151d6b91b72dd6261fe53c8e4a79",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kreisys",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
