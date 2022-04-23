@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   pname = "dual-function-keys";
-  version = "1.2.0";
+  version = "1.4.0";
 
   inherit src;
 

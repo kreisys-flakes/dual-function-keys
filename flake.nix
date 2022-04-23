@@ -4,7 +4,7 @@
   inputs = {
     src = {
       url =
-        "https://gitlab.com/interception/linux/plugins/dual-function-keys/-/archive/1.2.0/dual-function-keys-1.2.0.tar.gz";
+        "https://gitlab.com/interception/linux/plugins/dual-function-keys/-/archive/1.4.0/dual-function-keys-1.4.0.tar.gz";
       flake = false;
     };
     utils.url = "github:kreisys/flake-utils";
