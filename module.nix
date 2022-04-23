@@ -71,8 +71,12 @@ in with lib; {
       };
 
       plugins = [ cfg.package ];
-      udevmonConfig = ''
-        - JOB: "intercept -g $DEVNODE | dual-function-keys -c ${cfg.dfkConfigJSON} | uinput -d $DEVNODE"
+      udevmonConfig = let
+        dual-function-keys = "${cfg.package}/bin/dual-function-keys";
+        intercept = "${pkgs.interception-tools}/bin/intercept";
+        uinput = "${pkgs.interception-tools}/bin/uinput";
+      in ''
+        - JOB: "${intercept} -g $DEVNODE | ${dual-function-keys} -c ${cfg.dfkConfigJSON} | ${uinput} -d $DEVNODE"
           DEVICE:
             EVENTS:
               EV_KEY: [ ${
